@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: hsl(0, 0%, 8%);
+}
+
+.box-p {
+  width: 400px;
+  min-height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background: hsl(0, 0%, 12%);
+  border-radius: 10px;
+}
+
+.profile {
+  padding-top: 3em;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.profile__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile__img img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 2em;
+}
+.profile__description {
+  text-align: center;
+}
+.profile__description h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+.profile__description h3 {
+  color: hsl(75, 94%, 57%);
+  margin-bottom: 1.5em;
+  font-weight: 400;
+}
+.profile__description p {
+  font-size: 14px;
+  color: hsl(0, 0%, 100%);
+}
+
+.social {
+  margin-top: 1.5em;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.social__item {
+  cursor: pointer;
+  width: 100%;
+  padding: 15px 40px;
+  margin-bottom: 15px;
+  background: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.social__item:hover {
+  background: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}
+.social__item:last-child {
+  margin-bottom: 3em;
+}
+
+@media screen and (max-width: 400px) {
+  .box-p {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 300px;
+  }
+  .profile {
+    padding-top: 0;
+    width: 85%;
+  }
+  .profile__img img {
+    margin-bottom: 1em;
+  }
+  .profile__description {
+    width: 100%;
+  }
+  .profile__description h1 {
+    font-size: 24px;
+    margin-bottom: 0.2em;
+  }
+  .profile__description h3 {
+    font-size: 16px;
+  }
+  .profile__description p {
+    margin-bottom: 0;
+  }
+  .social {
+    margin-top: 0;
+    width: 90%;
+  }
+  .social__item {
+    width: 100%;
+    padding: 18px 40px;
+  }
+  .social__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

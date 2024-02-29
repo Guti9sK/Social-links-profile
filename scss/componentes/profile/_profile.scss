@@ -1,0 +1,54 @@
+@use "../variables/variables" as *;
+
+.box-p {
+  width: 400px;
+  min-height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background: $dark-grey;
+  border-radius: 10px;
+}
+
+.profile {
+  padding-top: 3em;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      object-position: center;
+      margin-bottom: 2em;
+    }
+  }
+
+  &__description {
+    text-align: center;
+
+    h1 {
+      color: $white;
+      font-weight: 400;
+    }
+    h3 {
+      color: $green;
+      margin-bottom: 1.5em;
+      font-weight: 400;
+    }
+    p {
+      font-size: $font-p;
+      color: $white;
+    }
+  }
+}
